@@ -1,0 +1,521 @@
+/* 
+Classes and IDs
+id:
+    header
+    navbar
+    main-content about-us
+    who-we-are
+    video iframe
+    inner-details img
+    footer
+ 
+class:
+    nav
+    logo img
+    nav-link
+    description
+    btn
+    sub-sections
+    org-setup
+    contacts
+*/
+:root {
+    --primary-color: #E4D06C;
+    --secondary-color: #000000;
+    --button-color: #09C0C3;
+    --button-background: #6E0707;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    word-spacing: .5rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+#header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: var(--secondary-color);
+    padding: .5rem 2rem;
+}
+
+.nav .logo img {
+    max-width: 10rem;
+    height: auto;
+}
+
+.topnav {
+    /* padding: .5rem 2rem; */
+    overflow: hidden;
+}
+
+.topnav .nav-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .3rem .5rem;
+    margin: .2rem .7rem;
+}
+
+.topnav .active {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 9rem;
+}
+
+.topnav .nav-link:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 9rem;
+    transition: ease 1s;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* description */
+.description {
+    margin: 4.3rem auto 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color);
+    height: 100vh;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background-color: var(--button-color);
+    color: var(--button-background);
+    border-radius: 2rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: var(--button-background);
+    color: var(--button-color);
+    transition: all ease-out 1s;
+}
+
+
+/* main content */
+#main-content {
+    text-align: center;
+}
+
+#about-us {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#about-us #who-we-are {
+    flex: 1;
+    padding: .4rem .6rem;
+    text-indent: initial;
+}
+
+#about-us #video {
+    flex: 1;
+    align-self: center;
+}
+
+#video iframe {
+    width: 30rem;
+    height: 18rem;
+    padding: .4rem .5rem;
+}
+
+/* inner details */
+.inner-details {
+    padding: 1rem .5rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.event-images {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, minmax(14rem, 1fr));
+    justify-items: center;
+    /* align-content: space-around; */
+    gap: .7rem;
+    padding: .5rem 0 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.event-images img {
+    width: 14rem;
+    height: 14rem;
+    transition: all 1s;
+}
+
+#footer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .3rem 2rem;
+}
+
+#footer p {
+    border-bottom: 1px solid var(--primary-color);
+    width: 90%;
+    text-align: center;
+}
+
+#footer a {
+    font-size: .9rem;
+}
+
+.sub-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.org-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding: 1rem; */
+}
+
+.org-setup a,
+.contacts a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: .8rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .social-media {
+
+} */
+
+.other-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media a:hover {
+    color: rgba(36, 198, 209, 0.932);
+    transition: all 1s;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .7rem;
+    padding: 1rem;
+}
+
+.contact a {
+    justify-self: end;
+    margin-left: .3rem;
+    padding: 0;
+}
+
+.contact a:hover {
+    opacity: .7;
+    transition: all 1s;
+}
+
+/* about page */
+.about {
+    width: 60%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .7);
+    /* border: 1px solid red; */
+}
+
+.about h1,
+.about p {
+    padding: 0 3rem;
+}
+
+
+#about-glowfux {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    padding: 1rem ;
+}
+
+.content h2 {
+    margin-bottom: .1rem;
+}
+
+
+/*          vision and mission statements */
+#vision-mission {
+    background: var(--primary-color);
+    margin-top: 0;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 70%;
+    padding: 2rem 0;
+}
+
+.mission-vision div {
+    margin: 0 1rem;
+    padding: 0 1rem;
+}
+
+.inner-details h3 {
+    border-bottom: 1px solid #000;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: .7rem;
+}
+
+#about-glowfux p:nth-child(5) {
+    margin-bottom: 0;
+}
+
+#about-glowfux .content ul {
+    list-style: none;
+}
+
+#team {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    padding: 1rem 4rem;
+}
+
+.team-members {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 3.5rem;
+}
+
+#beneficiaries {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("24.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+.list-of-beneficiaries {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.beneficiary {
+    margin-bottom: 3rem;
+    background: var(--secondary-color);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+
+.beneficiary h3,
+.beneficiary p {
+    margin: 0;
+}
+
+/* sponsors */
+#brands-list {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.all-brands {
+    padding: 1rem 2rem;
+    width: 70%;
+}
+
+/* contact */
+.contact-info {
+    background: var(--primary-color);
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+
+.details .other-details,
+.details .address {
+    margin-bottom: 1.2rem;
+}
+
+.address iframe {
+    width: 30rem;
+    height: 20rem;
+}
+
+/* media queris for the navbar */
+@media screen and (max-width: 650px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #who-we-are {
+        margin-bottom: 1.1rem;
+    }
+
+    #video iframe{
+        width: 17rem;
+    }
+
+    #inner-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .event-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-images img {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #footer p,
+    #footer h3 {
+        font-size: 1rem;
+    }
+
+    .org-setup {
+        text-align: center;
+    }
+
+}
+
+/* <=850px */
+@media screen and (min-device-width: 651px) and
+(max-device-width: 850px) {
+    .event-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
