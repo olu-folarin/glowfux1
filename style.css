@@ -236,7 +236,10 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* padding: 1rem; */
+}
+
+.org-setup a {
+    padding: 0;
 }
 
 .org-setup a,
@@ -264,7 +267,7 @@ p {
 }
 
 .social-media a:hover {
-    color: rgba(36, 198, 209, 0.932);
+    color: var(--button-background);
     transition: all 1s;
 }
 
@@ -280,11 +283,15 @@ p {
     justify-self: end;
     margin-left: .3rem;
     padding: 0;
+    text-decoration: none;
 }
 
-.contact a:hover {
-    opacity: .7;
-    transition: all 1s;
+.contact a:hover,
+.org-setup a:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    /* padding: .2rem .3rem; */
+    transition: ease 1s;
 }
 
 /* about page */
