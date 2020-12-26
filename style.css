@@ -295,6 +295,32 @@ p {
 }
 
 /* about page */
+#team,
+.pedigree,
+.donations {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 2rem;
+} 
+
+#team ul,
+.pedigree ul,
+.young-ambassadors  ul,
+.donations ul,
+#initiator ul {
+    text-align: justify;
+}
+
+#team ul li,
+.pedigree ul li,
+.young-ambassadors  ul li,
+.donations ul li,
+#initiator ul li {
+    list-style-type:circle;
+    padding: .5rem 1rem;
+}
+
 .about {
     width: 70%;
     height: 90%;
@@ -359,19 +385,11 @@ p {
     list-style: none;
 }
 
-#team {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    margin: 0;
+.young-ambassadors,
+#initiator {
+    background-color: var(--primary-color);
     text-align: center;
-    padding: 1rem 4rem;
-}
-
-.team-members {
-    width: 70%;
-    margin: 0 auto;
-    text-align: justify;
-    margin-bottom: 3.5rem;
+    padding: 1rem 2rem;
 }
 
 #beneficiaries {
@@ -413,6 +431,12 @@ p {
 .all-brands {
     padding: 1rem 2rem;
     width: 70%;
+}
+
+#initiator li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: help;
 }
 
 /* contact */
